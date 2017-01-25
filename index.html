@@ -432,6 +432,7 @@
                 $('#section5').hide();
                 $('#section6').hide();
                 $('#section7').hide();
+                $('.wrapper').hide();
                 $('#toggle').hide();
 
                 $('#toggle').click(function() {
@@ -465,13 +466,14 @@
                             $('#section5').show();
                             $('#section6').show();
                             $('#section7').show();
-
+                            $('.wrapper').hide();
                             $('#toggle').hide();
 
                         }
                         if (index == 2 || anchorLink == 'home'){
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $('.wrapper').hide();
                             if (window.innerWidth < 480) {
                                 $('.school-logo2').fadeIn();
                             }
@@ -485,6 +487,7 @@
                         if(index == 3 || anchorLink == 'administration_page'){
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $('.wrapper').hide();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
                                display();
                             });
@@ -495,6 +498,7 @@
                         if(index == 4 || anchorLink == 'faculty_section') {
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $('.wrapper').hide();
                             $('#section3 .section-heading').addClass('animated fadeInDown');
                             if (window.innerWidth < 1025) {
                                 $('#section3 .stack-card').addClass('animated fadeInUp');
@@ -506,6 +510,7 @@
                         if(index == 5 || anchorLink == 'staff_section') {
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $('.wrapper').hide();
                             $('#section4 .section-heading').addClass('animated fadeInDown');
                             if (window.innerWidth < 1025) {
                                 $('#section4 .stack-card').addClass('animated fadeInUp');
@@ -517,6 +522,7 @@
                         if(index == 6 || anchorLink == 'founder_section'){
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $('.wrapper').show();
                             slideEffect('slideshow_2');
                             $('.wrapper').addClass('credit-animation');
                             $.fn.fullpage.setAllowScrolling(true,'up');
@@ -525,6 +531,7 @@
                         if(index == 7 || anchorLink == 'memory_section'){
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $('.wrapper').hide();
                             $('.card-section6').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
@@ -532,6 +539,7 @@
                         if(index == 8 || anchorLink == 'contact_section'){
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $('.wrapper').hide();
                             if (window.innerWidth < 600) {
                                 $('.icons i').removeClass('fa-4x').addClass('fa-2x');
                             }
